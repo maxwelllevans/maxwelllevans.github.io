@@ -9,93 +9,106 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    color: #333; /* Dark text for readability */
 }
 
 /* Global Header Styles */
 header {
-    height: 50vh; /* Half the viewport height */
+    height: 100vh; /* Full viewport height for home page */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; /* Ensure white text */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://wallpapercave.com/wp/wp6981138.jpg') no-repeat center center/cover; /* Background image */
+    color: #fff; /* White text for visibility */
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Larger header text */
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Add emphasis */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow for readability */
 }
 
-/* Specific Background Styles */
-body.about header {
-    background: url('https://wallpapercave.com/wp/wp6981138.jpg') no-repeat center center;
-    background-size: cover;
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
-body.home header {
-    background: url('https://wallpapercave.com/wp/wp6981138.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh; /* Full-page height for the home page */
+header a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2e4600; /* Forest green button */
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-body.projects header {
-    background: url('https://wallpapercave.com/wp/wp6981138.jpg') no-repeat center center;
-    background-size: cover;
+header a:hover {
+    background-color: #fff;
+    color: #2e4600; /* Forest green text on hover */
 }
 
 /* Navigation Styles */
 nav {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent background for contrast */
-    color: white;
-    padding: 10px 20px;
-    text-align: right;
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black for contrast */
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
     font-size: 1rem;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #ccc; /* Subtle color change on hover */
 }
 
-/* Main Content Styles */
+/* Main Content Section */
 main {
     padding: 40px 20px;
     max-width: 900px;
-    margin: 30px auto;
+    margin: 0 auto;
+    background-color: #fff; /* White background for content readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
     text-align: center;
-    color: #333;
 }
 
 main h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #2e4600; /* Forest green text */
+    color: #2e4600; /* Forest green for headings */
 }
 
 main p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 /* Footer Section */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    padding: 20px;
+    background-color: #2e4600; /* Forest green footer */
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 40px;
 }
